@@ -27,7 +27,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
         <!-- KOLOM KIRI: FORM PENGADUAN BARU -->
-        <div class="bg-white rounded-2xl shadow-lg border-t-4 border-unsriTeal border border-gray-100 p-6 h-fit">
+        <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border-t-4 border-unsriTeal border-x border-b border-gray-100 h-fit">
             <h2 class="text-lg font-bold text-unsriNavy mb-4 flex items-center">
                 <i class="fa-solid fa-pen-to-square mr-2 text-unsriTeal"></i> Buat Pengaduan Baru
             </h2>
@@ -89,7 +89,7 @@
 
         <!-- KOLOM KANAN: RIWAYAT & TRACKING -->
         <div class="lg:col-span-2 space-y-6">
-            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100">
                 <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
                     <h2 class="text-lg font-bold text-unsriNavy flex items-center">
                         <i class="fa-solid fa-clock-rotate-left mr-2 text-unsriTeal"></i> Riwayat & Tracking Pengaduan
@@ -112,7 +112,7 @@
 
                 <div class="space-y-4">
                     @forelse($pengaduans as $item)
-                    <div class="bg-white border border-gray-200/90 rounded-xl p-5 shadow-md hover:shadow-xl hover:border-unsriTeal transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="bg-white border border-gray-200/90 rounded-xl p-5 hover:border-unsriTeal transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1">
                         <div class="flex justify-between items-start mb-2">
                             <div>
                                 <span class="text-xs font-bold bg-blue-100 text-unsriNavy px-2.5 py-1 rounded-md">{{ $item->nomor_tiket }}</span>

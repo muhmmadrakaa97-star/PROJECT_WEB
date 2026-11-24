@@ -7,8 +7,8 @@
         <a href="{{ Auth::user()->role === 'admin'
             ? route('admin.dashboard')
             : route('mahasiswa.dashboard') }}"
-            class="inline-flex items-center text-sm text-gray-500 hover:text-unsriNavy">
-            <i class="fa-solid fa-arrow-left mr-2"></i>
+            class="inline-flex items-center text-sm font-bold text-gray-500 hover:text-unsriNavy btn-back-transition group transition">
+            <i class="fa-solid fa-arrow-left mr-2 group-hover:-translate-x-1 transition-transform"></i>
             Kembali
         </a>
     </div>
@@ -30,7 +30,7 @@
     </div>
     @endif
 
-    <div class="bg-white rounded-xl shadow-md p-6 border-t-4 border-unsriTeal">
+    <div class="bg-white rounded-2xl shadow-xl p-6 border-t-4 border-unsriTeal border border-gray-100">
 
         <div class="mb-6">
             <h1 class="text-xl font-bold text-unsriNavy">

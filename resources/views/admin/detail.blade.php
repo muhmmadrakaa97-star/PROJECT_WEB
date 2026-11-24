@@ -32,7 +32,7 @@ default => 'bg-gray-100 text-gray-800 border-gray-200',
         background: white;
         border: 1px solid #e5e7eb;
         border-radius: 24px;
-        box-shadow: 0 8px 25px rgba(15, 23, 42, .05);
+        box-shadow: 0 12px 30px -4px rgba(15, 23, 42, 0.12), 0 6px 14px -4px rgba(15, 23, 42, 0.08);
     }
 
     .detail-info {
@@ -40,6 +40,7 @@ default => 'bg-gray-100 text-gray-800 border-gray-200',
         border: 1px solid #e2e8f0;
         border-radius: 15px;
         padding: 15px;
+        box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
     }
 
     .detail-label {
@@ -88,9 +89,9 @@ default => 'bg-gray-100 text-gray-800 border-gray-200',
     {{-- TOMBOL KEMBALI --}}
     <a
         href="{{ route('admin.dashboard') }}"
-        class="inline-flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-unsriNavy mb-6">
+        class="inline-flex items-center gap-2 text-sm font-bold text-gray-500 hover:text-unsriNavy mb-6 btn-back-transition group transition">
 
-        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-arrow-left group-hover:-translate-x-1 transition-transform"></i>
 
         Kembali ke Dashboard
 
