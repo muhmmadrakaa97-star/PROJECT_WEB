@@ -43,7 +43,7 @@
         color: #1e293b;
         text-decoration: none;
 
-        box-shadow: 0 5px 15px rgba(15, 23, 42, 0.06);
+        box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.10), 0 8px 10px -6px rgba(15, 23, 42, 0.06);
 
         transition:
             transform .3s ease,
@@ -102,7 +102,7 @@
         background: var(--hover-bg);
         border-color: var(--hover-border);
 
-        box-shadow: 0 20px 38px rgba(15, 23, 42, .20);
+        box-shadow: 0 25px 45px -10px rgba(15, 23, 42, 0.28), 0 15px 20px -10px rgba(15, 23, 42, 0.15);
     }
 
     /* ORNAMEN OVAL UNO */
@@ -325,7 +325,7 @@
     {{-- STATISTIK --}}
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
 
-        <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <div class="bg-white rounded-2xl p-5 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div class="flex items-center justify-between">
                 <span class="text-xs font-bold text-gray-500 uppercase">
                     Total Laporan
@@ -339,7 +339,7 @@
         </div>
 
 
-        <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <div class="bg-white rounded-2xl p-5 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div class="flex items-center justify-between">
                 <span class="text-xs font-bold text-gray-500 uppercase">
                     Menunggu
@@ -353,7 +353,7 @@
         </div>
 
 
-        <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <div class="bg-white rounded-2xl p-5 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div class="flex items-center justify-between">
                 <span class="text-xs font-bold text-gray-500 uppercase">
                     Diproses
@@ -367,7 +367,7 @@
         </div>
 
 
-        <div class="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <div class="bg-white rounded-2xl p-5 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div class="flex items-center justify-between">
                 <span class="text-xs font-bold text-gray-500 uppercase">
                     Selesai
@@ -384,7 +384,7 @@
 
 
     {{-- FILTER --}}
-    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 mb-8">
+    <div class="bg-white rounded-2xl border border-gray-100 shadow-md p-5 mb-8">
 
         <div class="flex items-center gap-2 mb-4">
             <i class="fa-solid fa-sliders text-unsriTeal"></i>

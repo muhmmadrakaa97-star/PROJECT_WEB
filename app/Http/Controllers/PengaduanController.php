@@ -274,7 +274,7 @@ class PengaduanController extends Controller
             'unit_terkait' => 'nullable|string|max:255',
         ], [
             'alasan_ditolak.required_if' =>
-            'Alasan wajib diisi ketika laporan ditolak.',
+                'Alasan wajib diisi ketika laporan ditolak.',
         ]);
 
         $pengaduan = Pengaduan::findOrFail($id);
@@ -296,8 +296,9 @@ class PengaduanController extends Controller
             ->with(
                 'success',
                 'Status pengaduan ' .
-                    $pengaduan->nomor_tiket .
-                    ' berhasil diperbarui.'
+                $pengaduan->nomor_tiket .
+                ' berhasil diperbarui.'
             );
     }
 }
+
